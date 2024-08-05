@@ -63,7 +63,6 @@ if [ -z "$dns_server2" ]; then
 fi
 resolv="/etc/resolv.conf"
 if [ -f "$resolv" ]; then
-else
     sudo touch /etc/resolv.conf
     echo -e "nameserver $dns_server\nnameserver $dns_server2"
 fi 
